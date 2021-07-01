@@ -2,10 +2,10 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 use chriskacerguis\RestServer\RestController;
 
-class Welcome extends RestController {
+class Endpoint extends RestController {
 	public function index_get($param1=0, $param2=-1)
 	{
-		$this->response(array('foo'=>'bar',
+		$this->response(array('foo'=>'version 2',
 							'param1'=>$param1,
 							'param2'=>$param2), 200);
 	}
